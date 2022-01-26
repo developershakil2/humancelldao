@@ -1,0 +1,72 @@
+var _g;
+
+var _excluded = ["title", "titleId"];
+
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+
+function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+
+import * as React from "react";
+
+function SvgHecGOhm(_ref, svgRef) {
+  var title = _ref.title,
+      titleId = _ref.titleId,
+      props = _objectWithoutProperties(_ref, _excluded);
+
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 64,
+    height: 32,
+    xmlns: "https://i.ibb.co/z8cQDQw/logo.jpg",
+    xmlnsXlink: "https://i.ibb.co/z8cQDQw/logo.jpg",
+    ref: svgRef,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _g || (_g = /*#__PURE__*/React.createElement("g", null, /*#__PURE__*/React.createElement("title", null, "Layer 1"), /*#__PURE__*/React.createElement("g", {
+    id: "svg_2",
+    stroke: "null"
+  }, /*#__PURE__*/React.createElement("metadata", {
+    stroke: "null"
+  }), /*#__PURE__*/React.createElement("image", {
+    id: "svg_3",
+    width: 31,
+    height: 31,
+    xlinkHref: "https://i.ibb.co/z8cQDQw/logo.jpg",
+    y: 1.00001,
+    x: 32.00001,
+    stroke: "null"
+  })), /*#__PURE__*/React.createElement("g", null, /*#__PURE__*/React.createElement("g", {
+    id: "svg_4"
+  }, /*#__PURE__*/React.createElement("title", null, "Layer 1"), /*#__PURE__*/React.createElement("ellipse", {
+    fill: "#4b6587",
+    cx: 17,
+    cy: 16,
+    id: "svg_5",
+    rx: 15,
+    ry: 15,
+    stroke: "#4b6587"
+  }), /*#__PURE__*/React.createElement("g", {
+    stroke: "null"
+  }, /*#__PURE__*/React.createElement("g", {
+    stroke: "null"
+  }, /*#__PURE__*/React.createElement("title", {
+    stroke: "null"
+  }, "Layer 1"), /*#__PURE__*/React.createElement("g", {
+    stroke: "null"
+  }, /*#__PURE__*/React.createElement("metadata", {
+    stroke: "null"
+  }), /*#__PURE__*/React.createElement("image", {
+    xlinkHref: "https://i.ibb.co/z8cQDQw/logo.jpg",
+    height: 27.54335,
+    width: 23.33336,
+    y: 1.26781,
+    x: 5.74999,
+    stroke: "null"
+  })))))))));
+}
+
+var ForwardRef = /*#__PURE__*/React.forwardRef(SvgHecGOhm);
+export default __webpack_public_path__ + "static/media/HEC-gOHM.21df4600.svg";
+export { ForwardRef as ReactComponent };

@@ -1,0 +1,32 @@
+var _path;
+
+var _excluded = ["title", "titleId"];
+
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+
+function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+
+import * as React from "react";
+
+function SvgGlobe(_ref, svgRef) {
+  var title = _ref.title,
+      titleId = _ref.titleId,
+      props = _objectWithoutProperties(_ref, _excluded);
+
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 0 24 24",
+    ref: svgRef,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _path || (_path = /*#__PURE__*/React.createElement("path", {
+    d: "M 6 2 C 4.895 2 4 2.895 4 4 L 4 20 C 4 21.105 4.895 22 6 22 L 16.427734 22 C 16.143734 21.337 16 20.641 16 20 L 6 20 L 6 8 L 18 8 L 18 10 L 20 10 L 20 4 C 20 2.895 19.105 2 18 2 L 6 2 z M 6 4 L 18 4 L 18 6 L 6 6 L 6 4 z M 8 10 L 8 12 L 10 12 L 10 10 L 8 10 z M 11 10 L 11 12 L 13 12 L 13 10 L 11 10 z M 14 10 L 14 12 L 16 12 L 16 10 L 14 10 z M 20 12 L 20 13.199219 C 19 13.499219 18 14.4 18 16 C 18 17.9 19.599609 18.500391 20.599609 18.900391 C 21.799609 19.400391 22 19.5 22 20 C 22 20.5 21.8 21 21 21 C 20.2 21 20 20.5 20 20 L 18 20 C 18 21 18.6 22.400781 20 22.800781 L 20 24 L 22 24 L 22 22.800781 C 23.4 22.400781 24 21 24 20 C 24 18.1 22.400391 17.499609 21.400391 17.099609 C 20.200391 16.599609 20 16.5 20 16 C 20 15.2 20.5 15 21 15 C 21.8 15 22 15.5 22 16 L 23 16 L 24 16 C 24 15 23.4 13.599219 22 13.199219 L 22 12 L 20 12 z M 8 13 L 8 15 L 10 15 L 10 13 L 8 13 z M 11 13 L 11 15 L 13 15 L 13 13 L 11 13 z M 14 13 L 14 15 L 16 15 L 16 13 L 14 13 z M 8 16 L 8 18 L 10 18 L 10 16 L 8 16 z M 11 16 L 11 18 L 16 18 L 16 16 L 11 16 z"
+  })));
+}
+
+var ForwardRef = /*#__PURE__*/React.forwardRef(SvgGlobe);
+export default __webpack_public_path__ + "static/media/globe.0591a38a.svg";
+export { ForwardRef as ReactComponent };
